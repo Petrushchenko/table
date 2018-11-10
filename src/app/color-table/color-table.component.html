@@ -5,6 +5,6 @@
     </tr>
     <tr *ngFor="let col of colors">
         <td>{{col.colorName}}</td>
-        <td >{{col.hexValue}}</td>
+        <td [style.backgroundColor]="col.colorName">{{col.hexValue}}</td>
     </tr>
 </table>
