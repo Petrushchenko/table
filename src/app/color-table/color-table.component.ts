@@ -34,7 +34,6 @@ export class ColorTableComponent implements OnInit {
       this.colors = this.colors.reverse();
 
     }
- 
   }
 
 }

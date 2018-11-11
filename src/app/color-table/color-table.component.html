@@ -1,15 +1,16 @@
 <div class="container" >
     <div class="row justify-content-center">
-        <table class="table ">
+        <table class="table table-hover col-10 text-uppercase">
             <tr class="thead-dark">
                 <th>color name</th>
                 <th>hex value</th>
             </tr>
             <tr *ngFor="let col of colors"  class="table-light">
                 <td>{{col.colorName}}</td>
-                <td [style.backgroundColor]="col.colorName">{{col.hexValue}}</td>
+                <td [style.backgroundColor]="col.colorName"  [style.color]="col.colorName == 'black'? ' #fff6ea' : '#373636'">{{col.hexValue}}</td>
             </tr>
         </table>
+        <div class="w-100"></div>
         <button type="button" class="btn btn-dark text-uppercase" (click)="sorting()">sort colors</button>
        
     </div>

@@ -1,11 +1,22 @@
-$light-color: #fff6ea;
-$darck-color: #373636;
+$bg-color: #c5c5c5;
+$text-color: #373636;
 
-tr{
-    color: $darck-color;
-    text-transform: uppercase;
-    
+.container {
+    padding:0;
 }
+.row{
+    background-color: $bg-color;
+    padding: 40px 0;
+
+}
+table {
+    border: 10px solid $text-color;
+    tr{
+    color: $text-color;
+    
+    }
+}
+
 button {
     margin-top: 40px;
     padding: 20px;
