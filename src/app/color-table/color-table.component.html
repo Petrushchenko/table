@@ -1,10 +1,16 @@
-<table>
-    <tr>
-        <th>color name</th>
-        <th>hex value</th>
-    </tr>
-    <tr *ngFor="let col of colors">
-        <td>{{col.colorName}}</td>
-        <td [style.backgroundColor]="col.colorName">{{col.hexValue}}</td>
-    </tr>
-</table>
+<div class="container" >
+    <div class="row justify-content-center">
+        <table class="table ">
+            <tr class="thead-dark">
+                <th>color name</th>
+                <th>hex value</th>
+            </tr>
+            <tr *ngFor="let col of colors"  class="table-light">
+                <td>{{col.colorName}}</td>
+                <td [style.backgroundColor]="col.colorName">{{col.hexValue}}</td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-dark text-uppercase" (click)="sorting()">sort colors</button>
+       
+    </div>
+</div>

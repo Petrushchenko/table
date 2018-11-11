@@ -9,6 +9,7 @@ import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 
 import { InMemoryDataService } from './api/in-memory-data.service';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { ColorTableComponent } from './color-table/color-table.component';
 import { ColorService } from './services/color.service'
@@ -20,6 +21,7 @@ import { ColorService } from './services/color.service'
   ],
   imports: [
     BrowserModule,
+    NgbModule.forRoot(),
     HttpClientModule,
 
     // remove this when real api will be ready

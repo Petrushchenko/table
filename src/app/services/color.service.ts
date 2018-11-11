@@ -15,4 +15,6 @@ export class ColorService {
   public getColors(): Observable<Array<object>> {
     return this.httpClient.get<object[]>(this.colorUrl);
   }
+
+  
 }
