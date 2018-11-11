@@ -28,7 +28,7 @@ export class ColorTableComponent implements OnInit {
   
   sorting(){
     if(this.toSort) {
-      this.colors.sort((a, b) => (a.hexValue.slice(1) > b.hexValue.slice(1)) ? -1 : 1);
+      this.colors.sort((a, b) => (a["hexValue"].slice(1) > b["hexValue"].slice(1)) ? -1 : 1);
       this.toSort = !this.toSort;
     } else {
       this.colors = this.colors.reverse();
